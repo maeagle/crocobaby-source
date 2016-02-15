@@ -1,0 +1,200 @@
+// Global variable overrides. Must be declared before importing Valo.
+
+// Defines the plaintext font size, weight and family. Font size affects general component sizing.
+//$v-font-size: 14px;
+//$v-font-weight: 300;
+$v-font-family: "Open Sans", sans-serif;
+
+// Defines the border used by all components.
+//$v-border: 1px solid (v-shade 0.7);
+$v-border-radius: 5px;
+
+// Affects the color of some component elements, e.g Button, Panel title, etc
+$v-background-color: hsl(210, 0%, 98%);
+// Affects the color of content areas, e.g  Panel and Window content, TextField input etc
+//$v-app-background-color: $v-background-color;
+$v-app-loading-text: "Loading...";
+
+// Affects the visual appearance of all components
+//$v-gradient: v-linear 8%;
+//$v-bevel-depth: 30%;
+//$v-shadow-opacity: 5%;
+
+// Defines colors for indicating status (focus, success, failure)
+$v-focus-color: valo-focus-color(); // Calculates a suitable color automatically
+//$v-friendly-color: #2c9720;
+//$v-error-indicator-color: #ed473b;
+
+// For more information, see: https://vaadin.com/book/-/page/themes.valo.html
+// Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
+
+@import "../valo/valo.scss";
+
+@mixin crocobaby {
+  @include valo;
+
+  .productSelect:after {
+    position: absolute;
+    right: 9px;
+    top: 3px;
+    width: 1em;
+  }
+
+  .companySelect:after {
+    position: absolute;
+    right: 9px;
+    top: 7px;
+    width: 1em;
+  }
+
+
+  .periodUnitSelect:after {
+    position: absolute;
+    right: 4px;
+    top: 5px;
+    width: 1em;
+  }
+
+  .v-select select {
+    color: #65b7d7;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .inputView > .v-spacing {
+    height: 30px;
+  }
+
+  .inputView_loadingBack {
+    background-color: #65b7d7;
+  }
+
+  .scoreDashboard_layout {
+    //border:2px solid #ffffff;
+  }
+
+  .scoreDashboard_title {
+    background-color: #65B7D7;
+  }
+
+  .scoreDashboard_title > .v-spacing {
+    height: 20px;
+  }
+
+  .scoreDashboard_productLabel {
+    text-align: left;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .scoreDashboard_scoreFrame {
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    margin: auto;
+  }
+
+  .scoreDashboard_scoreTextLabel {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .scoreDashboard_scoreLabel {
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .scoreDashboard_commentLabel {
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .scoreDashboard_productIntroContent {
+    text-align: left;
+    color: #407992;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .scoreDetail_uncheck {
+    background-color: #65B7D7;
+  }
+
+  .scoreDetail_uncheck > .v-spacing {
+    height: 10px;
+  }
+
+  .scoreDetail_check {
+    background-color: #ffffff;
+  }
+
+  .scoreDetail_check > .v-spacing {
+    height: 10px;
+  }
+
+  .scoreDetail_scoreLabel_check {
+    text-align: center;
+    color: #65B7D7;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .scoreDetail_scoreLabel_uncheck {
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .scoreDetail_titleLabel_check {
+    text-align: center;
+    color: #65B7D7;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .scoreDetail_titleLabel_uncheck {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .scoreDashboard_rateCommentTitle {
+    text-align: left;
+    color: #407992;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .scoreDashboard_rateCommentContent {
+    text-align: left;
+    color: #407992;
+    font-size: 16px;
+    padding-left: 40px;
+  }
+
+  .InputProductSelect {
+    height: 30px;
+    width: 70px;
+  }
+
+  .v-table-cell-content-cell {
+    font-size: 12px;
+    color: #407992;
+    font-weight: 300;
+  }
+
+  .v-touchkit-navbar-caption {
+    color: #407992;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+}
